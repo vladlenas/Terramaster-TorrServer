@@ -44,7 +44,7 @@ case $1 in
     service_restart
     ;;
   *)
-    echo "Usage: `basename $0` {start|stop|status|restart}"
+    echo "Usage: torrserver {start|stop|status|restart}"
     exit 1
     ;;
 esac
