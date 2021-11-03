@@ -10,7 +10,7 @@ service_start() {
   start-stop-daemon --start --quiet --background --make-pidfile --pidfile $pidfile --exec $DAEMON -d $base_path/
    
   if [ ! -e "$torrserver_conf" ]; then
-    echo -e "location ~ ^/torrserver {\n\tproxy_pass http://127.0.0.1:8090;\n}" >$torrserver_conf
+    echo -e "location ~ ^/ {\n\tproxy_pass http://127.0.0.1:8090;\n}" >$torrserver_conf
     service nginx reload
   fi
   sleep 1
