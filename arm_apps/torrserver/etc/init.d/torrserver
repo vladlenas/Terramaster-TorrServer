@@ -7,7 +7,7 @@ DAEMON=$base_path/bin/torrserver
 
 service_start() {
  start-stop-daemon --start --quiet --background --make-pidfile --pidfile $pidfile \
-                --exec $DAEMON -d $base_path/ >> $logfile 2>&1
+                --exec $DAEMON -d $base_path/
 }
 
 service_stop() {
@@ -44,7 +44,7 @@ case $1 in
     service_restart
     ;;
   *)
-    echo "Usage: torrserver {start|stop|status|restart}"
+    echo "Usage: $(basename $0) {start|stop|status|restart}"
     exit 1
     ;;
 esac
