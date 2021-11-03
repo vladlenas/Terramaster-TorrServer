@@ -1,19 +1,25 @@
 #!/bin/sh
-VERSION="1.2.109"
+
 base_path=/usr/local/torrserver
 pidfile=/var/run/torrserver.pid
 #logfile=$base_path/torrserver.log
 DAEMON=$base_path/bin/torrserver
+torrserver_conf=/etc/nginx/conf.d/torrserver.conf
 
 service_start() {
- start-stop-daemon --start --quiet --background --make-pidfile --pidfile $pidfile \
-                --exec $DAEMON -d $base_path/
+  start-stop-daemon --start --quiet --background --make-pidfile --pidfile $pidfile --exec $DAEMON -d $base_path/
+   
+  if [ ! -e "$torrserver_conf" ]; then
+    echo -e "location ~ ^/torrserver {\n\tproxy_pass http://127.0.0.1:8090;\n}" >$torrserver_conf
+    service nginx reload
+  fi
+  sleep 1
 }
 
 service_stop() {
- start-stop-daemon --stop --pidfile $pidfile --exec $DAEMON
-   RETVAL=$?
-   [ $RETVAL -eq 0 ] && [ -e "$pidfile" ] && rm -f $pidfile
+  start-stop-daemon --stop --pidfile $pidfile --exec $DAEMON
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && [ -e "$pidfile" ] && rm -f $pidfile
 }
 
 service_status() {
