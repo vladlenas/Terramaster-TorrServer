@@ -1,5 +1,6 @@
 #!/bin/sh
 
+basename=torrserver
 base_path=/usr/local/torrserver
 pidfile=/var/run/torrserver.pid
 #logfile=$base_path/torrserver.log
