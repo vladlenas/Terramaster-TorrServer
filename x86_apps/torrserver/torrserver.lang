@@ -1,77 +1,11 @@
 [en-us]
 name = "torrserver"
 auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[zh-cn]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[zh-hk]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[ja-jp]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[de-de]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[fr-fr]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[it-it]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[es-es]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[ko-kr]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[hu-hu]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
-
-[pl-pl]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
+version = "1.2.115"
 descript = "TorrServer, torrent to http."
 
 [ru-ru]
 name = "torrserver"
 auth = "vladlenas"
-version = "1.2.111"
+version = "1.2.115"
 descript = "TorrServer,торрент ссылки в http."
-
-[tr-tr]
-name = "torrserver"
-auth = "vladlenas"
-version = "1.2.111"
-descript = "TorrServer, torrent to http."
