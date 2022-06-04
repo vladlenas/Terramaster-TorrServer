@@ -1,11 +1,11 @@
 [en-us]
 name = "torrserver"
 auth = "vladlenas"
-version = "1.2.115"
+version = "1.2.116"
 descript = "TorrServer, torrent to http."
 
 [ru-ru]
 name = "torrserver"
 auth = "vladlenas"
-version = "1.2.115"
+version = "1.2.116"
 descript = "TorrServer,торрент ссылки в http."
